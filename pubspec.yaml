@@ -1,43 +1,64 @@
 name: tasbeeh_counter
 description: "A new Flutter project."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
+
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
 
 version: 1.0.0+1
 
 environment:
   sdk: ^3.5.4
 
-
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
 dependencies:
   flutter:
     sdk: flutter
+  # flutter_launcher_icons: "^3.5.4"
+
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+  # cupertino_icons: ^4.0.0
+
+# name: my_demo
+# description: A new Flutter project.
+
+# dependencies:
+#   flutter:
+#     sdk: flutter
 
 dev_dependencies:
-  flutter_test:
+  flutter_launcher_icons: ^0.14.2
+  flutter_lints: ^4.0.0 
+  flutter:
     sdk: flutter
 
+flutter_icons: 
+  android: true
+  ios: true
+  image_path: "assets/logo.jpeg"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/logo.jpeg"
+   # Make sure this is correctly indented under dev_dependencies
 
-  flutter_lints: ^4.0.0
-
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
-
   uses-material-design: true
+  # flutter_launcher_icons: ^4.0.0
 
-  # To add assets to your application, add an assets section, like this:
-  assets:
-     - image/tasbeeh.png
-  #   - images/a_dot_ham.jpeg
+  # assets:
+
+  #  - images/download.jpeg
+  #  - images/diamond.jpeg
+  #  - images/me.jpeg
+  #  - images/rih.png
+  #  - images/re.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
